@@ -1,0 +1,40 @@
+.todoList {
+    margin: 0.2rem 0;
+    height: 7rem;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: var(--card);
+}
+.todoDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+    font-weight: 500;
+}
+.todoDetail .heading{
+    font-size: 3rem;
+    color: var(--primary);
+}
+.todoDetail.para{
+    font-size: 1.5rem;
+}
+.button button{
+    margin: 0 1rem;
+    width: 8rem;
+    height: 2.3rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+#btn-complete{
+    border: 2px solid var(--btn-complete);
+    color: var(--btn-complete);
+}
+#btn-delete{
+    border: 2px solid red;
+    color: red;
+}
