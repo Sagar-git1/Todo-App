@@ -61,3 +61,29 @@ h1{
 h1 span{
     color: var(--primary);
 }
+
+@media (max-width: 865px) {
+    .form{
+        padding: 2rem;
+    }
+    .inputs input{
+        width: 12.5rem;
+        margin: 0 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .form{
+        flex-direction: column;
+    }
+    .inputs{
+        flex-direction: column;
+    }
+    .inputs input{
+        width: 75vw;
+        margin: 0.5rem 0rem;
+    }
+    .btn button{
+        width: 75vw;
+        margin: 1.2rem 0;
+    }
+}
