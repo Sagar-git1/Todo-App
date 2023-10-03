@@ -6,8 +6,14 @@ function App() {
   const [Todos, setTodo] = useState([]);
 
   const onFormData = (formData) => {
-    setTodo((prevTodos) => { return [formData, ...prevTodos] });
-    console.log(formData);
+    if(formData.title.trim().length <= 0) {
+      alert("Name cannot be empty!");
+      return;
+    }
+    else{
+      setTodo((prevTodos) => { return [formData, ...prevTodos] });
+    }
+      console.log(formData);
   }
 
   const deleteItem = (id) => {
